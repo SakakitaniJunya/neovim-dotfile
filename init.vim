@@ -53,6 +53,10 @@ set smartcase
 set autoread
 au CursorHold * checktime
 
+" NERDTree 自動読み込み
+autocmd VimEnter * NERDTree
+
+
 " バックアップとスワップファイルの設定
 set backup
 set backupdir=~/.config/nvim/backup//

@@ -32,7 +32,7 @@ set hlsearch
 set smartindent
 set laststatus=2
 set wildmenu
-set lines=30 columns=100
+" set lines=30 columns=100
 set ruler
 set history=1000
 set encoding=utf8

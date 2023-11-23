@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sainnhe/vim-color-forest-night'
+Plug 'skanehira/preview-markdown.vim'
 
 " コード補完と検索のためのプラグイン
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -97,3 +98,12 @@ nmap <leader>cs :OmniSharpStartServer<CR>
 nmap <leader>cc :OmniSharpStopServer<CR>
 nmap <leader>cd :OmniSharpGotoDefinition<CR>
 
+" Markdown設定
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_new_list_item_indent = 0
+
+" Lazygitの起動キーバインド
+nmap <leader>gg :LazyGit<CR>
+
+" LazyGitコマンドの定義
+command! LazyGit :term lazygit

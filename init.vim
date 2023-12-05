@@ -12,7 +12,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sainnhe/vim-color-forest-night'
-Plug 'skanehira/preview-markdown.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
+
 
 " コード補完と検索のためのプラグイン
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -97,6 +98,12 @@ hi VertSplit cterm=none
 nmap <leader>cs :OmniSharpStartServer<CR>
 nmap <leader>cc :OmniSharpStopServer<CR>
 nmap <leader>cd :OmniSharpGotoDefinition<CR>
+
+" 一度に5行または5文字移動
+nnoremap J 5j
+nnoremap K 5k
+nnoremap H 5h
+nnoremap L 5l
 
 " Markdown設定
 let g:vim_markdown_folding_disabled = 1
